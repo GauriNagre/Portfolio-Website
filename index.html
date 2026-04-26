@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauri Nagre — Business Analyst | Data Analyst | Product Analyst</title>
+  <meta name="description" content="Portfolio of Gauri Nagre — Business Analyst, Data Analyst, Product Analyst with 3+ years in fintech, data, and product thinking.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">GN</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#dissertation">Dissertation</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- SECTION 1: HERO -->
+<section id="hero" style="position: relative; overflow: hidden;">
+  <div class="scan-line"></div>
+  <div class="hero-bg"></div>
+  <div class="container hero-wrapper" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px;">
+    <div class="hero-content" style="flex: 1; min-width: 300px;">
+      <div class="hero-logo" style="display: none;">GN</div>
+      <h1 class="hero-name">Gauri Nagre</h1>
+      <div class="hero-roles-typewriter" style="font-family: 'Oswald', sans-serif; font-size: clamp(28px, 5vw, 42px); color: var(--text-muted); margin-bottom: 32px; display: flex; align-items: center; gap: 8px;">
+        <span style="color: var(--navy); font-weight: 700;">// roles /</span>
+        <span id="typewriter-text" style="color: var(--lime); font-weight: 700;"></span><span class="cursor" style="color: var(--lime); animation: blink 1s step-end infinite;">|</span>
+      </div>
+      <p class="hero-bio">I turn messy data into decisions people actually trust. I'm Gauri, an MBA candidate in Business Analytics with 3+ years of experience at the intersection of fintech, data, and product thinking. I've spent time debugging production banking systems at LTI Mindtree, benchmarking AI tools for Wells Fargo's governance teams, and building ML applications from scratch. Along the way I've learned that the hardest part of analytics isn't the model, it's asking the right question before you open a single CSV. I'm drawn to roles where data has consequences: product decisions, growth experiments, risk frameworks. If you're building something that needs someone who can go from raw SQL to a boardroom recommendation, let's talk.</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">Learn More About Me</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/GauriNagre?tab=repositories" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gauri-nagre-3b68551a0/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:gaurinagre13@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap" style="flex: 0 1 350px; display: flex; justify-content: center;">
+      <img src="assets/images/pic.jpeg" alt="Gauri Nagre" style="width: 100%; max-width: 350px; border-radius: var(--radius); border: 4px solid var(--navy); box-shadow: var(--shadow);">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Data with<br><span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block; margin-top: 8px;">consequences.</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap" style="height: 100%; display: flex;">
+        <div class="about-image" style="flex: 1;">
+          <img src="assets/images/Gauri_Vijay_Nagre_pic.jpeg" alt="Gauri Nagre - Professional Photo">
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="reveal">I sit at the intersection of data, product, and financial services which is a rarer combination than it sounds. Over 3+ years across LTI Mindtree and Wells Fargo, I've diagnosed production failures using complex SQL, evaluated AI tools for enterprise governance, and led cross-functional teams through high-stakes delivery. My MBA in Business Analytics has given me the framework to go beyond reporting into experimentation design, causal thinking, and metric strategy. I build things that get used: dashboards stakeholders trust, analyses that change decisions, and tools that make data accessible to people who don't speak Python.</p>
+        <h3 class="reveal" style="font-size:18px; margin-bottom:16px; color:var(--navy);">View My Work</h3>
+        <div class="view-work-buttons reveal" style="margin-bottom: 32px;">
+          <button class="view-work-btn" onclick="scrollToSection('experience')">Work Experience</button>
+          <button class="view-work-btn" onclick="scrollToSection('education')">Education</button>
+          <button class="view-work-btn" onclick="scrollToSection('projects')">Projects</button>
+          <button class="view-work-btn" onclick="scrollToSection('skills')">Skills</button>
+          <button class="view-work-btn" onclick="scrollToSection('achievements')">Achievements</button>
+        </div>
+        
+        <div class="mission-vision" style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <div class="mv-card reveal" style="flex: 1; min-width: 250px; margin-bottom: 0;">
+            <h4>🎯 Mission</h4>
+            <p style="color: white;">To make data the most trusted voice in every product decision I'm part of.</p>
+          </div>
+          <div class="mv-card reveal" style="flex: 1; min-width: 250px; margin-bottom: 0;">
+            <h4>🔭 Vision</h4>
+            <p style="color: white;">To build analytics systems and products that don't just measure the world — but change how people navigate it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Career</span>
+      <h2 class="section-title">Where I've<br><span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block; margin-top: 8px;">shipped signal.</span></h2>
+    </div>
+    <div class="timeline">
+      <!-- Entry 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 8px;">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/Wells.png" alt="Wells Fargo Logo" style="width: 52px; height: 52px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; border: 1px solid var(--border-color);">
+              <div>
+                <div class="exp-title">Program Analyst Intern</div>
+                <div class="exp-company">Wells Fargo</div>
+              </div>
+            </div>
+            <span class="exp-badge">Full-time</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</span>
+            <span><i class="fas fa-calendar"></i> April 2025 - June 2025</span>
+          </div>
+          <div class="exp-section">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Evaluated 3 enterprise data classification tools (Purview, Dataplex, Dataguise) across 10+ AI/ML and compliance criteria using a Pugh Matrix framework.</li>
+              <li>Defined AI feature benchmarks aligned to Wells Fargo's data governance standards for consistent cross-team evaluation.</li>
+              <li>Mapped classification gaps for unsupported data sources and proposed an AI-powered automation roadmap.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Improved tool selection efficiency by 30%, directly informing vendor decisions.</li>
+              <li>Projected 20% improvement in regulatory audit preparedness through the proposed automation roadmap.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Entry 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 8px;">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/LTI.png" alt="LTIMindtree Logo" style="width: 52px; height: 52px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; border: 1px solid var(--border-color);">
+              <div>
+                <div class="exp-title">Senior Consultant - System Management</div>
+                <div class="exp-company">LTI Mindtree</div>
+              </div>
+            </div>
+            <span class="exp-badge">Full-time</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+            <span><i class="fas fa-calendar"></i> August 2022 - July 2024</span>
+          </div>
+          <div class="exp-section">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Analyzed performance data across banking applications using Oracle, PostgreSQL, and MySQL with complex SQL (CTEs, window functions, subqueries) to identify root causes of production failures.</li>
+              <li>Led a 15-member cross-functional team as L2 Application Lead using KPI dashboards and structured sprint reviews.</li>
+              <li>Built incident analysis workflows and translated production data patterns into actionable playbooks for engineering and client teams.</li>
+              <li>Coordinated end-to-end release deployments via OpenShift and Jira across 10+ production releases annually.</li>
+              <li>Served as analytical liaison between client stakeholders and engineering, translating business requirements into data-backed technical specifications.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Drove 40% reduction in SLA breaches within 6 months through SQL-led root cause analysis.</li>
+              <li>Maintained 4.6/5 performance rating across 3 consecutive cycles.</li>
+              <li>Reduced reputational risk by ~30% through structured incident analysis and documented playbooks.</li>
+              <li>Resolved 100+ production incidents with zero-defect rollout across all managed releases.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Entry 3 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 8px;">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/LMEG.jpg" alt="LMEG Logo" style="width: 52px; height: 52px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; border: 1px solid var(--border-color);">
+              <div>
+                <div class="exp-title">Teaching Assistant</div>
+                <div class="exp-company">LITTLE MORE EDUCATION GROUP</div>
+              </div>
+            </div>
+            <span class="exp-badge">Part-time</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</span>
+            <span><i class="fas fa-calendar"></i> Jan 2020 - Feb 2021</span>
+          </div>
+          <div class="exp-section">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Supported lesson delivery in grammar and phonics for early learners.</li>
+              <li>Helped students improve pronunciation and language comprehension.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Improved student reading accuracy through targeted phonics support.</li>
+              <li>Praised for creating engaging, student-friendly learning activities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Education</span>
+      <h2 class="section-title">Frameworks &<br><span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block; margin-top: 8px;">foundations.</span></h2>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-degree"><img src="assets/images/SIBM_Bengaluru_logo.png" style="width:48px;height:48px;object-fit:contain;border-radius:8px;background:#fff;padding:4px;flex-shrink:0;" alt="SIBM Logo"> Master of Business Administration</div>
+      <div class="edu-school">Symbiosis Institute of Business Management (SIBM) Bengaluru — <em>Business Analytics</em></div>
+      <div class="edu-meta">
+        <span><i class="fas fa-calendar"></i> 2024 - 2026</span>
+        <span><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+        <span><i class="fas fa-clock"></i> Full Time</span>
+      </div>
+      <div class="edu-highlights">
+        <h4>Key Highlights</h4>
+        <ul>
+          <li>Specializing in Business Analytics and Data-Driven Decision Making.</li>
+          <li>Focus on Strategic Management and Business Intelligence.</li>
+          <li>Advanced coursework in Machine Learning and Statistical Analysis.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-degree"><img src="assets/images/VSIT.png" style="width:48px;height:48px;object-fit:contain;border-radius:8px;background:#fff;padding:4px;flex-shrink:0;" alt="VSIT Logo"> Bachelor of Science in Information Technology</div>
+      <div class="edu-school">Vidyalankar Institute of Technology</div>
+      <div class="edu-meta">
+        <span><i class="fas fa-calendar"></i> 2017 - 2020</span>
+        <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+        <span><i class="fas fa-clock"></i> Full Time</span>
+      </div>
+      <div class="edu-highlights">
+        <h4>Key Highlights</h4>
+        <ul>
+          <li>Core subjects: Data Structures, Algorithms, Database Management.</li>
+          <li>Specialized in Software Development and System Analysis.</li>
+          <li>Strong foundation in Programming and Web Technologies.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Portfolio</span>
+      <h2 class="section-title">Built to be<br><span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block; margin-top: 8px;">used.</span></h2>
+    </div>
+    <div class="project-card reveal">
+      <span class="project-type">Web Application</span>
+      <div class="project-title">Semi-AutoML WebApp for Learning Data Science <a href="https://github.com/GauriNagre/EZYML" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+      <p class="project-desc">Developed an interactive web app that simplifies the learning of data science concepts through a Semi-AutoML approach, enabling users to run ML models and visualize outputs without deep coding knowledge.</p>
+      <div class="project-outcomes">
+        <h4>Key Outcomes</h4>
+        <ul>
+          <li>Simplified ML learning for beginners through guided automation.</li>
+          <li>Enabled interactive visualizations and end-to-end ML workflows.</li>
+          <li>User-friendly interface for non-technical users.</li>
+          <li>Real-time model training and evaluation.</li>
+        </ul>
+      </div>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">Pandas</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Seaborn</span>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <span class="project-type">Data Engineering · Business Intelligence</span>
+      <div class="project-title">GRC Data Warehouse & Audit Intelligence Dashboard <a href="https://drive.google.com/drive/folders/1JinEPyjxMQcKa4rEeSxIvsEB_ZMZmR9b" target="_blank" aria-label="Project Link"><i class="fas fa-external-link-alt"></i></a></div>
+      <p class="project-desc">Designed and built an end-to-end compliance analytics pipeline — from raw CSV ingestion to a governed Power BI dashboard — simulating the GRC (Governance, Risk & Compliance) data infrastructure used by regulated financial institutions. The system provides a single, trusted view of internal controls, risk levels, audit status, and policy compliance across an organisation.</p>
+      <div class="project-outcomes">
+        <h4>Key Outcomes</h4>
+        <ul>
+          <li>Built a 4-layer data pipeline (Staging → ODS → Data Warehouse → Data Marts) with a clean star schema model across 5 conformed dimensions.</li>
+          <li>Engineered an Audit Check quality layer that identified 946 data issues — duplicates, incomplete records, and low-signal noise — and resolved them, reducing total issues by 35% (946 → 610).</li>
+          <li>Eliminated all Medium-severity noise from executive reporting, leaving only High-severity, actionable control failures.</li>
+          <li>Delivered a Power BI dashboard enabling drill-down to individual Control IDs by severity, source table, and owner for targeted remediation.</li>
+        </ul>
+      </div>
+      <div class="project-tech">
+        <span class="tech-tag">SQL</span><span class="tech-tag">Power BI</span><span class="tech-tag">Star Schema</span><span class="tech-tag">ETL</span><span class="tech-tag">ODS Architecture</span><span class="tech-tag">Data Quality</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: DISSERTATION -->
+<section id="dissertation">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Research</span>
+      <h2 class="section-title">MBA <span>Dissertation</span></h2>
+    </div>
+    <div class="project-card reveal">
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <span class="project-type">NLP</span><span class="project-type">DistilBERT</span><span class="project-type">SHAP</span><span class="project-type">Multi-label Classification</span><span class="project-type">Python</span>
+      </div>
+      <div class="project-title">EthosAI — AI Ethics Compliance Checker <a href="https://drive.google.com/drive/folders/1F_LQQ0RpQCyk3pX2OSSqF8v1ZLueJrgV" target="_blank" aria-label="Dissertation Link"><i class="fas fa-external-link-alt"></i></a></div>
+      <p class="project-desc">Developed an automated AI governance auditing system as an MBA dissertation that classifies AI documentation across 10 ethical categories (Fairness, Transparency, Privacy, Safety, Accountability and more) using a fine-tuned DistilBERT multi-label transformer model — reducing manual ethics review time from 3–5 hours to under 30 seconds per document.</p>
+      <div class="project-outcomes">
+        <h4>Key Outcomes</h4>
+        <ul>
+          <li>Built and annotated an original dataset of 2,328 paragraphs from Hugging Face model cards and governance reports, mapped to 10 IEEE/EU AI Act compliance dimensions.</li>
+          <li>Trained a multi-label DistilBERT classifier achieving document-level compliance scoring across 10 ethical governance categories with confidence-level outputs.</li>
+          <li>Integrated SHAP explainability to surface exact token-level contributions driving each classification — making the system auditable and trustworthy.</li>
+          <li>Generated structured governance reports with category scores, gap analysis, and actionable recommendations — saving 70% of compliance review effort.</li>
+        </ul>
+      </div>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span><span class="tech-tag">DistilBERT</span><span class="tech-tag">HuggingFace</span><span class="tech-tag">SHAP</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">NLP</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Expertise</span>
+      <h2 class="section-title">The <span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block;">toolkit.</span></h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid">
+      <!-- Filled by JS -->
+    </div>
+    <div class="certs-section">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Professional <span>Certifications</span></h2>
+      </div>
+      <div class="certs-grid" id="certsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">The <span style="background: var(--lime); color: var(--navy); padding: 4px 16px; display: inline-block;">receipts.</span></h2>
+      <p class="section-subtitle">Highlights of my professional journey and the recognition I've received for my contributions in data science, analytics, and technical excellence.</p>
+    </div>
+    <div class="achievements-stats">
+      <div class="stat-card reveal"><div class="stat-number">5+</div><div class="stat-label">Professional Certifications</div></div>
+      <div class="stat-card reveal"><div class="stat-number">3+</div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-card reveal"><div class="stat-number">2</div><div class="stat-label">Major Projects Completed</div></div>
+      <div class="stat-card reveal"><div class="stat-number">5+</div><div class="stat-label">Technical Achievements</div></div>
+    </div>
+    <div id="achievementsGrid">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: CONTACT -->
+<section id="contact" style="position: relative; overflow: hidden;">
+  <div class="scan-line"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <p class="section-subtitle">Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form" id="contactFormWrap">
+        <form id="contactForm" action="https://formspree.io/f/xpwrwkpj" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project or idea..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="check">✅</div>
+          <h3>Message Sent!</h3>
+          <p style="color:var(--text-secondary);margin-top:8px;">Thank you for reaching out. I'll get back to you soon!</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div><div class="contact-label">Email</div><div class="contact-value">gaurinagre13@gmail.com</div></div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div><div class="contact-label">Phone</div><div class="contact-value">+91 9769488981</div></div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="contact-label">Location</div><div class="contact-value">Mumbai, India</div></div>
+        </div>
+        <a href="https://www.linkedin.com/in/gauri-nagre-3b68551a0/" target="_blank" class="contact-item reveal" style="text-decoration:none;">
+          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div><div class="contact-label">LinkedIn</div><div class="contact-value">Connect on LinkedIn</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-name">Gauri Nagre</div>
+    <p class="footer-tagline">Passionate and dedicated to creating innovative solutions and exceptional digital experiences.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/GauriNagre?tab=repositories" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/gauri-nagre-3b68551a0/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:gaurinagre13@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- IMAGE MODAL -->
+<div class="modal-overlay" id="imageModal">
+  <button class="modal-close" id="modalClose">&times;</button>
+  <div class="modal-content"><img id="modalImg" src="" alt="Certificate"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
