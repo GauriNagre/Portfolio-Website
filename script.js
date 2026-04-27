@@ -179,20 +179,6 @@ document.getElementById('imageModal').addEventListener('click', (e) => {
   }
 });
 
-// === FORM ===
-document.getElementById('contactForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  try {
-    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-    if (res.ok) {
-      form.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('show');
-      form.reset();
-    } else { alert('Something went wrong. Please try again.'); }
-  } catch { alert('Network error. Please try again.'); }
-});
-
 // === HELPERS ===
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
